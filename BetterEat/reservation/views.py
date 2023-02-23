@@ -1,7 +1,16 @@
-from rest_framework.decorators import api_view
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.permissions import IsAuthenticated
 from .models import Menu, Booking
 from .serializers import MenuSerializer, BookingSerializer
 from rest_framework import viewsets,generics
+
+
+@api_view()
+@permission_classes([IsAuthenticated])
+
+def msg(request):
+    return Response({"message":"This view is protected"})
+
 
 # Create your views here. 
 class MenuItemsView(generics.ListCreateAPIView):
