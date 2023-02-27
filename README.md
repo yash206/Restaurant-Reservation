@@ -6,9 +6,9 @@ Testing is done by a method of unit testing.
 
 Api paths to follow
 
-/resservation/booking/tables/
-/reservation/menu-items/
-/reservation/menu-item1/
+/resservation/booking/tables/ <br>
+/reservation/menu-items/  <br>
+/reservation/menu-item1/  <br>
 
 
 
